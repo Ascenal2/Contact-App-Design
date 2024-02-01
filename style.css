@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+    --tw-bg-opacity: 1;
+    background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+.titulo{
+    color: white;
+}
+body{
+    background-color: #202836;
+}
+.form{
+    background-color: rgb(23 37 84 / 0.25);
+    min-width: 25rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.form div{
+    margin-bottom: 1.5rem;
+}
+.labels{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.main{
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+ 
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding:0.75rem 1.5rem;   
+  font-weight:normal;
+}
+
+
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(34, 50, 117);
+  color: white;
+}
+tbody > tr:nth-of-type(odd) {
+    background-color: rgb(0, 135, 153);
+    color: white;
+  }
+.my-input {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.375rem; 
+    border: none; 
+    padding-top: 0.375rem; 
+    padding-left: 1.75rem; 
+    padding-right: 5rem; 
+    color: #1a202c; 
+    line-height: 1.5rem;
+    box-shadow: inset 0 1px 0 0 #e2e8f0; /
+    placeholder { color: #a0aec0; } 
+    outline: none; 
+  }
+  
+  .my-input:focus {
+    box-shadow: 0 0 0 2px #4f46e5, inset 0 1px 0 0 #e2e8f0; /* Equivalente a focus:ring-2, focus:ring-inset, focus:ring-indigo-600 en Tailwind */
+  }
+  
+
+  .button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem; /* Espaciado interno del botón */
+    font-size: 1rem; /* Tamaño de fuente del botón */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0.375rem; /* Equivalente a rounded-md en Tailwind */
+    background-color: #4f46e5; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+  }
+  
+  .button:hover {
+    background-color: #4338ca; /* Cambio de color al pasar el ratón sobre el botón */
+  }
+  
+  .button:active {
+    background-color: #372f9e; /* Cambio de color al hacer clic en el botón */
+  }
+  /* Estilos generales para la tabla */
+table {
+    border-collapse: collapse; /* Colapsar los bordes de la tabla */
+    margin-top: 1.5rem; /* Espaciado superior de la tabla */
+  }
+  
+  /* Estilos para las celdas de la cabecera */
+  th {
+    background-color: #4f46e5; /* Color de fondo de las celdas de la cabecera */
+    color: #ffffff; /* Color del texto de las celdas de la cabecera */
+    padding: 0.75rem; /* Espaciado interno de las celdas de la cabecera */
+    text-align: left; /* Alineación del texto a la izquierda */
+  }
+  
+  /* Estilos para las celdas del cuerpo de la tabla */
+  td {
+    border: 1px solid #e2e8f0; /* Borde de 1 píxel y color gris */
+    padding: 0.75rem; /* Espaciado interno de las celdas del cuerpo */
+  }
+  
+  /* Estilos para los botones dentro de las celdas del cuerpo */
+  td button {
+    display: inline-block;
+    padding: 0.5rem 1rem; /* Espaciado interno de los botones */
+    font-size: 0.875rem; /* Tamaño de fuente de los botones */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0.375rem; /* Equivalente a rounded-md en Tailwind */
+    background-color: #4f46e5; /* Color de fondo de los botones */
+    color: #ffffff; /* Color del texto de los botones */
+    margin-right: 0.5rem; /* Espaciado derecho entre botones */
+  }
+  
+  td button:hover {
+    background-color: #4338ca; /* Cambio de color al pasar el ratón sobre los botones */
+  }
+  
+  td button:active {
+    background-color: #372f9e; /* Cambio de color al hacer clic en los botones */
+  }
+
+  td button:last-of-type {
+    background-color: rgb(255, 0, 0);
+  }
+    td button:last-of-type:hover {
+        background-color: rgb(153, 30, 30);
+    }
+  
+  @media screen and (max-width: 1000px){
+    .main{
+        flex-direction: column;
+    }
+    .form{
+      width: 100%;
+    }
+    table{
+      width: 100%;
+      height: 250px;
+    }
+    
+  }
